@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/azylla-dev/azylla.dev/compare/v1.0.0...v1.0.1) (2026-04-10)
+
+
+### Bug Fixes
+
+* **ci:** use sudo for docker commands in deploy workflow ([55eeedc](https://github.com/azylla-dev/azylla.dev/commit/55eeedc5b98f4b4b8e3cc20493cb176b1713cc7a))
+
 ## 1.0.0 (2026-04-10)
 
 
