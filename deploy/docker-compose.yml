@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  web:
+    image: azylla-dev:latest
+    build: .
+    networks:
+      - traefik-public
+    deploy:
+      replicas: 1
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=traefik-public
+        - traefik.http.routers.azylla-dev.rule=Host(`azylla.dev`)
+        - traefik.http.routers.azylla-dev.entrypoints=websecure
+        - traefik.http.routers.azylla-dev.tls=true
+        - traefik.http.routers.azylla-dev.tls.certresolver=myresolver
+        - traefik.http.services.azylla-dev.loadbalancer.server.port=3000
+
+networks:
+  traefik-public:
+    external: true
