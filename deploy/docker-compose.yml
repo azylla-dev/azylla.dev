@@ -2,8 +2,7 @@ version: "3.8"
 
 services:
   web:
-    image: azylla-dev:latest
-    build: .
+    image: 127.0.0.1:5000/azylla-dev:latest
     networks:
       - traefik-public
     deploy:
