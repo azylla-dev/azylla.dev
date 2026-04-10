@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/azylla-dev/azylla.dev/compare/v1.0.1...v1.0.2) (2026-04-10)
+
+
+### Bug Fixes
+
+* bind Next.js to 0.0.0.0 and use local registry for swarm deployment ([be93cd0](https://github.com/azylla-dev/azylla.dev/commit/be93cd0d3d8ee21aee7403d901a19d163e697ebc))
+
 ## [1.0.1](https://github.com/azylla-dev/azylla.dev/compare/v1.0.0...v1.0.1) (2026-04-10)
 
 
